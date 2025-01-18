@@ -1,0 +1,171 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e797bb, #fa7b6f);
+    color: #f5ebeb;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; 
+}
+
+header {
+    padding: 40px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 40px 40px;
+    text-align: center;
+    background: linear-gradient(to right, #ff6f61, #de639a);
+    color: #fff;
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%; 
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    color: #fff;
+    background: linear-gradient(to right, #ff6f61, #de639a);
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #de639a, #ff6f61);
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button:active {
+    transform: scale(1);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin-top: 20px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.3));
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #983868;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-me {
+    font-size: 1.4rem;
+    color: #983868;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid #983868;
+    text-align: center;
+    font-size: 24px;
+    line-height: 100px;
+    background-color: #f0f0f0;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.3s ease;
+}
+
+.card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6f61;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+input {
+    margin: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+input:focus {
+    transform: scale(1.05);
+    border: 2px solid #de639a;
+}
+
+button {
+    border-radius: 50%;
+    background: linear-gradient(to right, #ff6f61, #de639a);
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #de639a, #ff6f61);
+}
+
+#score, #lives {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #983868;
+}
